@@ -1,0 +1,35 @@
+<h1>Listing crew_members</h1>
+
+<table>
+  <tr>
+    <th>User</th>
+    <th>First name</th>
+    <th>Last name</th>
+    <th>Filmmaker</th>
+    <th>Img</th>
+    <th>Bio</th>
+    <th>Location</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @crew_members.each do |crew_member| %>
+  <tr>
+    <td><%= crew_member.user_id %></td>
+    <td><%= crew_member.first_name %></td>
+    <td><%= crew_member.last_name %></td>
+    <td><%= crew_member.filmmaker %></td>
+    <td><%= crew_member.img %></td>
+    <td><%= crew_member.bio %></td>
+    <td><%= crew_member.location %></td>
+    <td><%= link_to 'Show', crew_member %></td>
+    <td><%= link_to 'Edit', edit_crew_member_path(crew_member) %></td>
+    <td><%= link_to 'Destroy', crew_member, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Crew member', new_crew_member_path %>

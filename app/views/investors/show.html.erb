@@ -1,0 +1,40 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Bio:</b>
+  <%= @investor.bio %>
+</p>
+
+<p>
+  <b>Location:</b>
+  <%= @investor.location %>
+</p>
+
+<p>
+  <b>Accredidation:</b>
+  <%= @investor.accredidation %>
+</p>
+
+<p>
+  <b>Investments:</b>
+  <%= @investor.investments %>
+</p>
+
+<p>
+  <b>First name:</b>
+  <%= @investor.first_name %>
+</p>
+
+<p>
+  <b>Last name:</b>
+  <%= @investor.last_name %>
+</p>
+
+<p>
+  <b>Budget size:</b>
+  <%= @investor.budget_size %>
+</p>
+
+
+<%= link_to 'Edit', edit_investor_path(@investor) %> |
+<%= link_to 'Back', investors_path %>

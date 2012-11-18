@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Title:</b>
+  <%= @job.title %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @job.description %>
+</p>
+
+<p>
+  <b>Location:</b>
+  <%= @job.location %>
+</p>
+
+<p>
+  <b>Film:</b>
+  <%= @job.film_id %>
+</p>
+
+<p>
+  <b>Audition start date:</b>
+  <%= @job.audition_start_date %>
+</p>
+
+<p>
+  <b>Audition end date:</b>
+  <%= @job.audition_end_date %>
+</p>
+
+
+<%= link_to 'Edit', edit_job_path(@job) %> |
+<%= link_to 'Back', jobs_path %>

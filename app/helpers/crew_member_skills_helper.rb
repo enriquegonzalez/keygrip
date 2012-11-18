@@ -1,0 +1,2 @@
+module CrewMemberSkillsHelper
+end

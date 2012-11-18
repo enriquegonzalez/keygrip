@@ -1,0 +1,35 @@
+<h1>Listing investors</h1>
+
+<table>
+  <tr>
+    <th>Bio</th>
+    <th>Location</th>
+    <th>Accredidation</th>
+    <th>Investments</th>
+    <th>First name</th>
+    <th>Last name</th>
+    <th>Budget size</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @investors.each do |investor| %>
+  <tr>
+    <td><%= investor.bio %></td>
+    <td><%= investor.location %></td>
+    <td><%= investor.accredidation %></td>
+    <td><%= investor.investments %></td>
+    <td><%= investor.first_name %></td>
+    <td><%= investor.last_name %></td>
+    <td><%= investor.budget_size %></td>
+    <td><%= link_to 'Show', investor %></td>
+    <td><%= link_to 'Edit', edit_investor_path(investor) %></td>
+    <td><%= link_to 'Destroy', investor, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Investor', new_investor_path %>

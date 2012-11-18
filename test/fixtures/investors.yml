@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  bio: MyText
+  location: MyString
+  accredidation: MyString
+  investments: MyText
+  first_name: MyString
+  last_name: MyString
+  budget_size: 1
+
+two:
+  bio: MyText
+  location: MyString
+  accredidation: MyString
+  investments: MyText
+  first_name: MyString
+  last_name: MyString
+  budget_size: 1

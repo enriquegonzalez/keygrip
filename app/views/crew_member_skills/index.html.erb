@@ -1,0 +1,25 @@
+<h1>Listing crew_member_skills</h1>
+
+<table>
+  <tr>
+    <th>Crew member</th>
+    <th>Skill</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @crew_member_skills.each do |crew_member_skill| %>
+  <tr>
+    <td><%= crew_member_skill.crew_member_id %></td>
+    <td><%= crew_member_skill.skill_id %></td>
+    <td><%= link_to 'Show', crew_member_skill %></td>
+    <td><%= link_to 'Edit', edit_crew_member_skill_path(crew_member_skill) %></td>
+    <td><%= link_to 'Destroy', crew_member_skill, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Crew member skill', new_crew_member_skill_path %>

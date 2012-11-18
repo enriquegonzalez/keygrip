@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Magik</title>
+  <%= stylesheet_link_tag "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+</ul>
+  <nav>
+    <%= link_to "Home", root_url %> |
+    <%= link_to "Films", films_url %> |
+    <%= link_to "Talent", crew_members_url %> |
+    <%= link_to "Users", users_url %> |
+    <%= link_to "Investors", investors_url %>
+  </nav>
+<ul>
+
+<%= yield %>
+
+</body>
+</html>

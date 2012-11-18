@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  budget: 1
+  location: MyString
+  trailer: MyString
+  synopsis: MyText
+  genre_id: 1
+
+two:
+  budget: 1
+  location: MyString
+  trailer: MyString
+  synopsis: MyText
+  genre_id: 1

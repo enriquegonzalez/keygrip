@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Crew member:</b>
+  <%= @crew_member_skill.crew_member_id %>
+</p>
+
+<p>
+  <b>Skill:</b>
+  <%= @crew_member_skill.skill_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_crew_member_skill_path(@crew_member_skill) %> |
+<%= link_to 'Back', crew_member_skills_path %>
