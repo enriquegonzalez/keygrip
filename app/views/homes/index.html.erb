@@ -1,1 +1,13 @@
-<h1> This is the home Page of Magik <h1>
+<section>
+	<div class="main">
+		<%= image_tag "keygrip_logo.jpg", :alt => "The Keygrip logo."%>
+		<h1>Opening Doors for Independent Film.</h1>
+		<h2>Request an Invite</h2>
+		<%= form_tag root_url do%>
+	    <%= text_field_tag :email, 'email@example.com', :class => 'text-field'%><br /><br />
+		<%= submit_tag "Invite me!", :class => 'invite-button'%>
+		<% end %>
+	</div>
+</section>
+<section>
+

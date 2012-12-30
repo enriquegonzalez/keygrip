@@ -1,22 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Magik</title>
+  <title>Keygrip: Opening Doors for Independent Film</title>
   <%= stylesheet_link_tag "application", :media => "all" %>
+  <link href='http://fonts.googleapis.com/css?family=Inder' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Sanchez' rel='stylesheet' type='text/css'>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
 </head>
 <body>
-
-</ul>
-  <nav>
-    <%= link_to "Home", root_url %> |
-    <%= link_to "Films", films_url %> |
-    <%= link_to "Talent", crew_members_url %> |
-    <%= link_to "Users", users_url %> |
-    <%= link_to "Investors", investors_url %>
-  </nav>
-<ul>
 
 <%= yield %>
 
